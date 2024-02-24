@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+
+<!--    <debug-overrides>-->
+<!--        <trust-anchors>-->
+<!--            <certificates src="@raw/cancertkey18"/>-->
+<!--            <certificates src="system"/>-->
+<!--        </trust-anchors>-->
+<!--    </debug-overrides>-->
+<!--    <base-config>-->
+<!--        <trust-anchors>-->
+<!--            <certificates src="@raw/cancertkey18"/>-->
+<!--            <certificates src="system"/>-->
+<!--            <certificates src="user"/>-->
+<!--        </trust-anchors>-->
+<!--    </base-config>-->
+
+    <domain-config>
+        <domain includeSubdomains="true">https://auth.krakatautirta.co.id:8443/realms/kti/protocol/openid-connect/auth</domain>
+        <trust-anchors>
+            <certificates src="@raw/cancertkey18"/>
+        </trust-anchors>
+    </domain-config>
+
+</network-security-config>

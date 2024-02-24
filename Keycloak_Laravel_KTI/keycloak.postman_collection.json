@@ -1,0 +1,91 @@
+{
+	"info": {
+		"_postman_id": "3dbf3506-f6a2-4fa6-bedc-ad1a78176e8f",
+		"name": "keycloak",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16686982"
+	},
+	"item": [
+		{
+			"name": "token keycloak",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "client_id",
+							"value": "flutter",
+							"type": "text"
+						},
+						{
+							"key": "client_id",
+							"value": "larav",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "grant_type",
+							"value": "password",
+							"type": "text"
+						},
+						{
+							"key": "client_secret",
+							"value": "xNq5LQN8GZtOPAEJPCPY456FDf16XHjx",
+							"description": "client_secret flutter",
+							"type": "text"
+						},
+						{
+							"key": "client_secret",
+							"value": "f3yaeimoeL5ve0EK0Urd1GQZ3Zdg3gKz",
+							"description": "client_secret laravel",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "scope",
+							"value": "openid",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "sso@krakatautirta.co.id",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "trias zaen",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "password",
+							"value": "123",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://auth.krakatautirta.co.id:8443/realms/kti/protocol/openid-connect/token",
+					"protocol": "https",
+					"host": [
+						"auth",
+						"krakatautirta",
+						"co",
+						"id"
+					],
+					"port": "8443",
+					"path": [
+						"realms",
+						"kti",
+						"protocol",
+						"openid-connect",
+						"token"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
